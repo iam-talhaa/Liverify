@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:liver_disease_detection/res/Resources.dart';
-import 'package:liver_disease_detection/ui/home_screen.dart';
-import 'package:liver_disease_detection/ui/person_screen.dart';
-import 'package:liver_disease_detection/ui/search_screen.dart';
-import 'package:liver_disease_detection/ui/splash_screen.dart';
+import 'package:liverify/res/Resources.dart';
+import 'package:liverify/ui/Home/home_screen.dart';
+import 'package:liverify/ui/profile/person_screen.dart';
+import 'package:liverify/ui/Search/search_screen.dart';
+import 'package:liverify/ui/splash_screen.dart';
 
 void main() {
   runApp(Liver_disease_detection());
@@ -30,7 +30,7 @@ class _Liver_disease_detectionState extends State<Liver_disease_detection> {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(useMaterial3: true),
-          home: SplashScreen(),
+          home: Search_screen(),
         );
       },
     );

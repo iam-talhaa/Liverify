@@ -1,8 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:liver_disease_detection/main.dart';
-import 'package:liver_disease_detection/ui/home_screen.dart';
+import 'package:liverify/main.dart';
 
 class SplashService {
   void Login(BuildContext context) {

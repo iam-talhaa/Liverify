@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class C_button extends StatefulWidget {
   final name;
@@ -24,8 +25,8 @@ class _C_buttonState extends State<C_button> {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Container(
-          height: 28,
-          width: 100,
+          height: 40.h,
+          width: 150.w,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             color: widget.B_color,
@@ -33,7 +34,7 @@ class _C_buttonState extends State<C_button> {
           child: Center(
             child: Text(
               widget.name,
-              style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
         ),
