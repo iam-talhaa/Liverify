@@ -10,9 +10,9 @@ class BmiCalculator extends StatefulWidget {
 }
 
 class _BmiCalculatorState extends State<BmiCalculator> {
-  TextEditingController _weightController = TextEditingController();
-  TextEditingController _AgeController = TextEditingController();
-  TextEditingController _HeightController = TextEditingController();
+  final TextEditingController _weightController = TextEditingController();
+  final TextEditingController _AgeController = TextEditingController();
+  final TextEditingController _HeightController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
