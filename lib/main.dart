@@ -30,7 +30,7 @@ class _Liver_disease_detectionState extends State<Liver_disease_detection> {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(useMaterial3: true),
-          home: Search_screen(),
+          home: SplashScreen(),
         );
       },
     );

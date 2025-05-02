@@ -59,9 +59,9 @@ class _BmiCalculatorState extends State<BmiCalculator> {
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 5,
-                        blurRadius: 7,
-                        offset: Offset(0, 3),
+                        spreadRadius: 3,
+                        blurRadius: 5,
+                        offset: Offset(0, 4),
                       ),
                     ],
                     color: lightPink,
@@ -154,9 +154,9 @@ class _BmiCalculatorState extends State<BmiCalculator> {
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 5,
-                        blurRadius: 7,
-                        offset: Offset(0, 3),
+                        spreadRadius: 3,
+                        blurRadius: 5,
+                        offset: Offset(0, 4),
                       ),
                     ],
                     color: lightPink,
@@ -242,6 +242,108 @@ class _BmiCalculatorState extends State<BmiCalculator> {
                   ),
                 ),
               ],
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+            child: Container(
+              height: 150.h,
+              width: double.infinity.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+                color: LightBlue,
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: Text(
+                      'Height [cm]',
+                      style: TextStyle(fontSize: 14, color: greyColor),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextFormField(
+                      controller: _weightController,
+                      decoration: InputDecoration(
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: greyColor),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      GestureDetector(
+                        onTap: () {},
+                        child: Container(
+                          height: 35.h,
+                          width: 35.h,
+                          decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                            shape: BoxShape.circle,
+                            color: whiteColor,
+                          ),
+                          child: Center(
+                            child: Icon(
+                              Icons.remove,
+                              color: DarkBrown,
+                              size: 35,
+                              weight: 34,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        height: 35.h,
+                        width: 35.h,
+                        decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: Offset(0, 3),
+                            ),
+                          ],
+                          shape: BoxShape.circle,
+                          color: whiteColor,
+                        ),
+                        child: Center(
+                          child: Icon(
+                            Icons.add,
+                            color: DarkBrown,
+                            size: 35,
+                            weight: 34,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ],
